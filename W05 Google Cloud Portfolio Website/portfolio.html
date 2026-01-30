@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cloud Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text-main: #f8fafc;
+        --text-dim: #94a3b8;
+        --accent: #38bdf8;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--bg);
+        color: var(--text-main);
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      header {
+        text-align: center;
+        padding: 4rem 0;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        color: var(--accent);
+      }
+      p.subtitle {
+        font-size: 1.2rem;
+        color: var(--text-dim);
+      }
+
+      .section-title {
+        border-bottom: 1px solid var(--card-bg);
+        padding-bottom: 0.5rem;
+        margin-top: 3rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      .card {
+        background: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 12px;
+        transition: transform 0.2s ease;
+        border: 1px solid transparent;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        border-color: var(--accent);
+      }
+
+      .card h3 {
+        margin-top: 0;
+        color: var(--accent);
+      }
+
+      .badge {
+        display: inline-block;
+        background: #334155;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 4rem 0;
+        color: var(--text-dim);
+        font-size: 0.9rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-underline-offset: 4px;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Your Name</h1>
+        <p class="subtitle">Software Engineering Student & Cloud Explorer</p>
+      </header>
+
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I am a senior CS student focusing on cloud architecture and scalable
+          systems. Currently leading the Cloud Solutions Society to help others
+          bridge the gap between local code and global deployment.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Firebase Portfolio</h3>
+            <p>A globally distributed static website hosted on Google Cloud.</p>
+            <span class="badge">GCP</span>
+            <span class="badge">Firebase</span>
+          </div>
+          <div class="card">
+            <h3>Lab Project X</h3>
+            <p>
+              Description of a cool project you built in a previous workshop.
+            </p>
+            <span class="badge">Node.js</span>
+            <span class="badge">React</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Built during the Cloud Solutions Society Workshop</p>
+        <p>
+          <a href="#">GitHub</a> • <a href="#">LinkedIn</a> •
+          <a href="#">Twitter</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
